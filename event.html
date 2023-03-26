@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style -->
+    <link href="./event.css" rel="stylesheet">
+    <title>Event Calendar</title>
+</head>
+<body>
+    <!-- container start -->
+    <div class="container">
+        <!-- header start -->
+        <div class="header">
+            <div id="month"></div>
+            <div>
+                <button class="btnBack"><i class="fa fa-angle-left"></i></button>
+                <button class="btnNext"><i class="fa fa-angle-right"></i></button>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- weedays start-->
+        <div class="weekDays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+         <!-- weedays end -->
+        <!-- calender_day start -->
+        <div class="calendar"></div>
+        <!-- calendar_day end -->
+       
+    </div>
+    <!-- container end -->
+    <!-- model start -->
+    <div id="modal"></div>
+    <!-- model end -->
+    <!-- add event start -->
+    <div id="addEvent">
+        <h2>Add Event</h2>
+        <input type="text" id="txtTitle" placeholder="Event Title" />
+        <button id="btnSave">Save</button>
+        <button class="btnClose">Close</button>
+    </div>
+    <div id="viewEvent">
+        <h2>view Event</h2>
+        <p id="eventText">This is a sample event</p>
+        <button id="btnDelete">Delete</button>
+        <button class="btnClose">Close</button>
+    </div>
+    <!-- add event end -->
+    <script src="./event.js"></script>
+    
+</body>
+</html>
